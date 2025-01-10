@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:src="@{js/main.js}"></script>
+    <link rel="stylesheet" th:href="@{css/main.css}">
+</head>
+<body>
+<h1>Welcome <span th:text="${name}"></span></h1>
+<span th:text="${#strings.toUpperCase(name)}"></span>
+<div th:with="a=20,b=30">
+    <p th:text="'Value of a*b '+ ${a}*${b}"></p>
+</div>
+
+<button id="click-button" onclick="main()">Click here</button>
+
+</body>
+</html>
