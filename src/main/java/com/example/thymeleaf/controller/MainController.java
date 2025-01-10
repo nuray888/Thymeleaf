@@ -14,9 +14,9 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping("/elvis")
-    public String elvis(Model model){
-        model.addAttribute("isAdmin",true);
-        return "elvis";
-    }
+//    @GetMapping("/elvis")
+//    public String elvis(Model model){
+//        model.addAttribute("isAdmin",true);
+//        return "elvis";
+//    }
 }
