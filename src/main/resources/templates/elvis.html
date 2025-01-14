@@ -7,5 +7,16 @@
 <body>
 <p th:text="${isAdmin}? 'Hello Admin' : 'Welcome Welcome'"></p>
 
+<!--<p th:if="${isAdmin}">You are admin</p>-->
+<!--<p th:if="${gender}=='M'">You are male</p>-->
+<!--<p th:unless="${gender}=='M'">You are Female</p>-->
+
+<div th:switch="${gender}">
+<p th:case="M">You are male</p>
+<p th:case="F">You are female</p>
+<p th:case="*">no gender is specified</p>
+</div>
+
+
 </body>
 </html>
